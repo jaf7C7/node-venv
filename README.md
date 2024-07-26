@@ -1,7 +1,7 @@
-# Venv.js
+# `node-venv`
 
 At the moment all this script does is update your PATH variable to include
-`./node_modules/.bin`.
+`./node_modules/.bin`. Works similarly to (but worse than) python's `venv`.
 
 ## Usage
 
