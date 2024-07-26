@@ -3,18 +3,23 @@
 At the moment all this script does is update your PATH variable to include
 `./node_modules/.bin`. Works similarly to (but worse than) python's `venv`.
 
+## Installation
+
+Copy-paste this command into your shell to install the script to `~/.local/bin`.
+You can put it anywhere you like as long as it's in your shell's `PATH`.
+```
+curl -s https://raw.githubusercontent.com/jaf7C7/node-venv/master/node-venv -o ~/.local/bin/node-venv && chmod +x $_
+```
+
+Check it's installed properly
+```
+$ type node-venv
+node-venv is /home/jfox/.local/bin/node-venv
+```
+
 ## Usage
 
 ```
-$ # Install the script to a directory in your PATH
-$ curl -s \
-> https://raw.githubusercontent.com/jaf7C7/node-venv/blob/master/node-venv \
-> -o ~/.local/bin/node_venv && chmod +x $_
-$
-$ # Check it's installed properly
-$ type node-venv
-node-venv is /home/jfox/.local/bin/node-venv
-$
 $ # `cd` to the root of your chosen project and run the command
 $ cd ~/Projects/foo-project && node-venv
 $
